@@ -1,0 +1,32 @@
+{
+  "name": "gitter",
+  "version": "1.0.0",
+  "description": "A Git manager that breathes automation into GitHub accounts.",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/x99oly/Gitter.git"
+  },
+  "keywords": [
+    "GitHub",
+    "automation",
+    "ai",
+    "node",
+    "typescript"
+  ],
+  "author": "Samuel Araujo De Oliveira",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/x99oly/Gitter/issues"
+  },
+  "homepage": "https://github.com/x99oly/Gitter#readme",
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
