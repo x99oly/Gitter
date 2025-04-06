@@ -4,6 +4,8 @@
   "description": "A Git manager that breathes automation into GitHub accounts.",
   "main": "src/index.ts",
   "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/index.js",
     "dev": "ts-node src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,6 +22,7 @@
   ],
   "author": "Samuel Araujo De Oliveira",
   "license": "MIT",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/x99oly/Gitter/issues"
   },
@@ -28,5 +31,9 @@
     "@types/node": "^22.14.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "octokit": "^4.1.2"
   }
 }
