@@ -5,7 +5,9 @@ dotenv.config()
 
 async function Main()
 {
-    const _gitClient = new Octokit( { auth: String(process.env.GITHUB_KEY)})
+    const _gitClient = new Octokit( 
+        { auth: String(process.env.GITHUB_KEY), userAgent: String(process.env.GITHUB_USER_AGENT) }
+    )
 
     const {
         data: { login },
