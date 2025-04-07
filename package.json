@@ -2,7 +2,7 @@
   "name": "gitter",
   "version": "1.0.0",
   "description": "A Git manager that breathes automation into GitHub accounts.",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
     "start": "npm run build && node dist/index.js",
